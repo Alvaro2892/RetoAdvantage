@@ -26,8 +26,8 @@ public class CreateUserStep
     @When("^he enters and fills in all the data on the registration form$")
     public void heEntersAndFillsInAllTheDataOnTheRegistrationForm(List<CreateUserModel> data)
     {
-        //theActorInTheSpotlight().attemptsTo(CreateUserTask.advantage(data));
-        theActorInTheSpotlight().attemptsTo(LoginTask.inadvantage(data));
+        theActorInTheSpotlight().attemptsTo(CreateUserTask.advantage(data));
+        //theActorInTheSpotlight().attemptsTo(LoginTask.inadvantage(data));
     }
 
     @Then("^Verify that the user was created correctly (.*)$")
